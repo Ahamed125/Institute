@@ -3,1481 +3,303 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="HI-Tec College offers professional courses with industry-aligned curriculum and excellent placement records for career advancement.">
-    <meta name="keywords" content="Professional Courses, Career Education, Diploma Programs, Certificate Courses, Skill Development" >
-    <meta name="author" content="HI-Tec College">
-    <meta property="og:title" content="HI-Tec College | Excellence in Professional Education">
-    <meta property="og:description" content="Premier institute for professional education with industry-relevant courses and career advancement opportunities.">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://www.hiteccollege.lk">
-    <meta property="og:image" content="https://www.hiteccollege.lk/images/og-image.jpg">
-    <meta name="twitter:card" content="summary_large_image">
-    
-    <!-- Canonical URL -->
-    <link rel="canonical" href="https://www.hiteccollege.lk">
-    
-    <!-- Favicon -->
-    <link rel="icon" href="/favicon.ico" type="image/x-icon">
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-    <link rel="manifest" href="/site.webmanifest">
-    
-    <title>HI-Tec College | Excellence in Professional Courses</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    
-    <!-- JSON-LD structured data -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "EducationalOrganization",
-      "name": "Hitec College",
-      "description": "Premier institute for professional education with industry-relevant courses and career advancement opportunities.",
-      "url": "https://www.hiteccollege.lk",
-      "logo": "https://www.hiteccollege.lk/images/logo.png",
-      "sameAs": [
-        "https://www.facebook.com/hiteccollege",
-        "https://twitter.com/hiteccollege",
-        "https://www.linkedin.com/school/hitec-college"
-      ],
-      "address": {
-        "@type": "PostalAddress",
-        "streetAddress": "7/2, Waragashinna",
-        "addressLocality": "Akurana",
-        "addressRegion": "Kandy",
-        "postalCode": "20850",
-        "addressCountry": "LK"
-      },
-      "telephone": "+94773066411"
-    }
-    </script>
-    
+    <title>Payment Required </title>
     <style>
-        :root {
-            --primary: #2563eb;
-            --primary-dark: #1d4ed8;
-            --secondary: #f59e0b;
-            --dark: #1e293b;
-            --light: #f8fafc;
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         }
         
-        .hero-gradient {
-            background: linear-gradient(135deg, rgba(37, 99, 235, 0.9) 0%, rgba(79, 70, 229, 0.9) 100%);
+        body {
+            background: linear-gradient(135deg, #1a2a6c, #b21f1f, #fdbb2d);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            color: #333;
         }
         
-        .course-card:hover {
-            transform: translateY(-10px);
-            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
-        }
-        
-        .facility-icon {
-            transition: all 0.3s ease;
-        }
-        
-        .facility-card:hover .facility-icon {
-            transform: scale(1.1);
-            color: var(--primary);
-        }
-        
-        .nav-link:hover::after {
+        .container {
+            max-width: 800px;
             width: 100%;
-            background: var(--secondary);
+            background: rgba(255, 255, 255, 0.9);
+            border-radius: 15px;
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+            overflow: hidden;
+            position: relative;
         }
         
-        .nav-link::after {
-            content: '';
-            display: block;
-            width: 0;
-            height: 2px;
-            background: transparent;
-            transition: width 0.3s;
+        .header {
+            background: linear-gradient(to right, #1a2a6c, #b21f1f);
+            color: white;
+            padding: 25px;
+            text-align: center;
         }
         
-        /* Animation for hero content */
-        @keyframes fadeInUp {
+        .header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+        
+        .header p {
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+        
+        .content {
+            padding: 30px;
+        }
+        
+        .service-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin: 25px 0;
+        }
+        
+        .service-item {
+            background: white;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            border-left: 4px solid #1a2a6c;
+        }
+        
+        .service-item h3 {
+            color: #1a2a6c;
+            margin-bottom: 10px;
+        }
+        
+        .popup-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.7);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 1000;
+        }
+        
+        .popup-container {
+            background-color: white;
+            border-radius: 12px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+            width: 90%;
+            max-width: 500px;
+            padding: 30px;
+            text-align: center;
+            animation: popIn 0.5s forwards;
+            border-top: 5px solid #b21f1f;
+        }
+        
+        .payment-icon {
+            width: 80px;
+            height: 80px;
+            background-color: #b21f1f;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0 auto 20px;
+        }
+        
+        .payment-icon i {
+            color: white;
+            font-size: 40px;
+        }
+        
+        h2 {
+            color: #b21f1f;
+            margin-bottom: 15px;
+            font-weight: 600;
+        }
+        
+        p {
+            color: #666;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+        
+        .payment-message {
+            background-color: #fff5f5;
+            border: 1px solid #ffcccc;
+            padding: 15px;
+            margin: 20px 0;
+            text-align: center;
+            border-radius: 8px;
+            font-weight: 600;
+            color: #b21f1f;
+        }
+        
+        .btn-container {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-top: 20px;
+        }
+        
+        button {
+            padding: 12px 25px;
+            border: none;
+            border-radius: 6px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            font-size: 16px;
+        }
+        
+        .pay-now {
+            background-color: #1a2a6c;
+            color: white;
+        }
+        
+        .pay-now:hover {
+            background-color: #0d1a4d;
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(26, 42, 108, 0.4);
+        }
+        
+        .contact-btn {
+            background-color: #b21f1f;
+            color: white;
+        }
+        
+        .contact-btn:hover {
+            background-color: #8a1919;
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(178, 31, 31, 0.4);
+        }
+        
+        .close-btn {
+            background-color: #f1f1f1;
+            color: #555;
+        }
+        
+        .close-btn:hover {
+            background-color: #e0e0e0;
+        }
+        
+        @keyframes popIn {
             from {
+                transform: scale(0.8);
                 opacity: 0;
-                transform: translateY(30px);
             }
             to {
+                transform: scale(1);
                 opacity: 1;
-                transform: translateY(0);
             }
         }
         
-        .animate-fadeInUp {
-            animation: fadeInUp 0.8s ease-out forwards;
+        .footer {
+            background: #f8f9fa;
+            padding: 20px;
+            text-align: center;
+            color: #666;
+            border-top: 1px solid #eee;
         }
         
-        /* Enhanced Certificate styles */
-        .certificate-container {
-            max-width: 900px;
-            margin: 0 auto;
-            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
-            border: 15px solid transparent;
-            border-image: linear-gradient(45deg, #2563eb, #f59e0b, #10b981, #8b5cf6);
-            border-image-slice: 1;
-            padding: 3rem;
-            position: relative;
-            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
-            font-family: 'Times New Roman', serif;
-        }
-
-        .certificate-header {
-            text-align: center;
-            margin-bottom: 2rem;
-            position: relative;
-        }
-
-        .certificate-header h1 {
-            font-size: 2.8rem;
-            color: #1e293b;
-            margin-bottom: 0.5rem;
-            font-weight: bold;
-            letter-spacing: 2px;
-            text-transform: uppercase;
-        }
-
-        .certificate-header p {
-            font-size: 1.2rem;
-            color: #64748b;
-            font-style: italic;
-        }
-
-        .certificate-body {
-            margin: 2.5rem 0;
-            text-align: center;
-            position: relative;
-        }
-
-        .certificate-body h2 {
-            font-size: 2rem;
-            margin-bottom: 1.5rem;
-            color: #1e293b;
-            font-weight: 600;
-            text-decoration: underline;
-        }
-
-        .certificate-body p {
-            font-size: 1.3rem;
-            margin-bottom: 1rem;
-            line-height: 1.6;
-        }
-
-        .certificate-student {
-            font-size: 1.8rem;
-            font-weight: bold;
-            margin: 2rem 0;
-            color: #1e293b;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-            padding: 1rem;
-            background: rgba(255, 255, 255, 0.7);
-            border-radius: 5px;
-            display: inline-block;
-            min-width: 60%;
-        }
-
-        .certificate-details {
-            display: flex;
-            justify-content: space-between;
-            margin-top: 3rem;
-        }
-
-        .certificate-signature {
-            text-align: center;
-            width: 45%;
-        }
-
-        .certificate-signature p {
-            border-top: 2px solid #1e293b;
-            padding-top: 0.5rem;
-            margin-top: 3rem;
-            display: inline-block;
+        .highlight {
+            color: #b21f1f;
             font-weight: bold;
         }
-
-        .certificate-number {
-            position: absolute;
-            bottom: 1rem;
-            right: 2rem;
-            font-size: 0.9rem;
-            color: #64748b;
-        }
-
-        .certificate-seal {
-            position: absolute;
-            top: 1rem;
-            right: 1rem;
-            width: 100px;
-            height: 100px;
-            background: radial-gradient(circle, #f59e0b 0%, #d97706 100%);
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: white;
-            font-weight: bold;
-            transform: rotate(-15deg);
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
-            border: 3px solid white;
-        }
-
-        .certificate-seal:before {
-            content: '';
-            position: absolute;
-            width: 90%;
-            height: 90%;
-            border: 2px dashed white;
-            border-radius: 50%;
-        }
-
-        .certificate-ornament {
-            position: absolute;
-            width: 100%;
-            height: 100%;
-            top: 0;
-            left: 0;
+        
+        .blur {
+            filter: blur(5px);
             pointer-events: none;
-        }
-
-        .certificate-ornament:before,
-        .certificate-ornament:after {
-            content: '';
-            position: absolute;
-            width: 150px;
-            height: 150px;
-            background-size: contain;
-            background-repeat: no-repeat;
-            opacity: 0.1;
-        }
-
-        .certificate-ornament:before {
-            top: 20px;
-            left: 20px;
-            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%232563eb'%3E%3Cpath d='M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z'/%3E%3C/svg%3E");
-        }
-
-        .certificate-ornament:after {
-            bottom: 20px;
-            right: 20px;
-            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23f59e0b'%3E%3Cpath d='M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z'/%3E%3C/svg%3E");
-            transform: rotate(180deg);
-        }
-
-        /* Profile image styles for verification */
-        .profile-image-container {
-            display: flex;
-            justify-content: center;
-            margin: 1.5rem 0;
-        }
-
-        .profile-image {
-            width: 120px;
-            height: 120px;
-            border-radius: 50%;
-            object-fit: cover;
-            border: 4px solid #2563eb;
-            cursor: pointer;
-            transition: transform 0.3s, box-shadow 0.3s;
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-        }
-
-        .profile-image:hover {
-            transform: scale(1.05);
-            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
-        }
-
-        /* Profile image modal */
-        .profile-modal {
-            display: none;
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background-color: rgba(0, 0, 0, 0.8);
-            z-index: 1100;
-            justify-content: center;
-            align-items: center;
-        }
-
-        .profile-modal-content {
-            max-width: 90%;
-            max-height: 90%;
-            border-radius: 0.5rem;
-            overflow: hidden;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
-        }
-
-        .profile-modal-content img {
-            width: 100%;
-            height: auto;
-            display: block;
-        }
-
-        .close-profile-modal {
-            position: absolute;
-            top: 1rem;
-            right: 1rem;
-            background: rgba(0, 0, 0, 0.5);
-            color: white;
-            border: none;
-            border-radius: 50%;
-            width: 40px;
-            height: 40px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 1.5rem;
-            cursor: pointer;
-            z-index: 1101;
-        }
-
-        /* Verification styles */
-        .verification-container {
-            max-width: 600px;
-            margin: 0 auto;
-            background-color: white;
-            border-radius: 0.5rem;
-            padding: 2rem;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-        }
-
-        .verification-result {
-            margin-top: 2rem;
-            padding: 1.5rem;
-            border-radius: 0.5rem;
-            background-color: #f8fafc;
-            display: none;
-        }
-
-        .verification-result.valid {
-            border-left: 4px solid #10b981;
-        }
-
-        .verification-result.invalid {
-            border-left: 4px solid #ef4444;
-        }
-
-        .verification-result h3 {
-            margin-bottom: 1rem;
-        }
-
-        .verification-details {
-            margin-top: 1rem;
-        }
-
-        .verification-details p {
-            margin-bottom: 0.5rem;
-        }
-
-        .verification-details strong {
-            color: #1e293b;
-        }
-
-        /* Chatbot styles */
-        .chatbot-container {
-            position: fixed;
-            bottom: 20px;
-            right: 20px;
-            width: 350px;
-            z-index: 999;
-            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
-            border-radius: 0.5rem;
-            overflow: hidden;
-            display: none;
-        }
-
-        .chatbot-header {
-            background-color: #2563eb;
-            color: white;
-            padding: 0.75rem 1rem;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            cursor: pointer;
-        }
-
-        .chatbot-header h3 {
-            margin: 0;
-            font-size: 1rem;
-        }
-
-        .chatbot-toggle {
-            background: none;
-            border: none;
-            color: white;
-            font-size: 1.25rem;
-            cursor: pointer;
-        }
-
-        .chatbot-body {
-            background-color: white;
-            height: 400px;
-            display: flex;
-            flex-direction: column;
-        }
-
-        .chatbot-content {
-            flex: 1;
-            padding: 1rem;
-            overflow-y: auto;
-            background-color: #f8fafc;
-        }
-
-        .message {
-            margin-bottom: 0.75rem;
-            max-width: 80%;
-            padding: 0.5rem 0.75rem;
-            border-radius: 0.75rem;
-            font-size: 0.875rem;
-            line-height: 1.25rem;
-        }
-
-        .message-sent {
-            background-color: #2563eb;
-            color: white;
-            margin-left: auto;
-            border-bottom-right-radius: 0.25rem;
-        }
-
-        .message-received {
-            background-color: white;
-            color: #1e293b;
-            margin-right: auto;
-            border-bottom-left-radius: 0.25rem;
-            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
-        }
-
-        .message-meta {
-            display: flex;
-            justify-content: space-between;
-            font-size: 0.75rem;
-            margin-top: 0.25rem;
-            opacity: 0.8;
-        }
-
-        .message-sent .message-meta {
-            color: rgba(255, 255, 255, 0.8);
-        }
-
-        .message-received .message-meta {
-            color: rgba(107, 114, 128, 0.8);
-        }
-
-        .chatbot-input {
-            display: flex;
-            border-top: 1px solid #e2e8f0;
-        }
-
-        .chatbot-input input {
-            flex: 1;
-            padding: 0.75rem;
-            border: none;
-            outline: none;
-        }
-
-        .chatbot-send {
-            background-color: #2563eb;
-            color: white;
-            border: none;
-            padding: 0 1rem;
-            cursor: pointer;
-        }
-
-        .chatbot-send:hover {
-            background-color: #1d4ed8;
-        }
-
-        .chatbot-indicator {
-            position: fixed;
-            bottom: 20px;
-            right: 20px;
-            width: 50px;
-            height: 50px;
-            background-color: #2563eb;
-            color: white;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            cursor: pointer;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-            z-index: 999;
-        }
-
-        .chatbot-indicator-badge {
-            position: absolute;
-            top: -5px;
-            right: -5px;
-            background-color: #ef4444;
-            color: white;
-            border-radius: 50%;
-            width: 20px;
-            height: 20px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 0.75rem;
-        }
-
-        .quick-replies {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 0.5rem;
-            margin-top: 1rem;
-        }
-
-        .quick-reply {
-            background-color: #e0e7ff;
-            color: #3730a3;
-            border: none;
-            border-radius: 1rem;
-            padding: 0.5rem 1rem;
-            font-size: 0.75rem;
-            cursor: pointer;
-            transition: background-color 0.2s;
-        }
-
-        .quick-reply:hover {
-            background-color: #c7d2fe;
-        }
-        
-        @media (max-width: 768px) {
-            .certificate-container {
-                padding: 1.5rem;
-                border-width: 8px;
-            }
-
-            .certificate-header h1 {
-                font-size: 1.8rem;
-            }
-
-            .certificate-body h2 {
-                font-size: 1.4rem;
-            }
-
-            .certificate-details {
-                flex-direction: column;
-                align-items: center;
-            }
-
-            .certificate-signature {
-                width: 100%;
-                margin-bottom: 1.5rem;
-            }
-
-            .certificate-seal {
-                width: 70px;
-                height: 70px;
-                font-size: 0.8rem;
-            }
-
-            .chatbot-container {
-                width: calc(100% - 40px);
-                right: 20px;
-                bottom: 20px;
-            }
         }
     </style>
 </head>
-<body class="font-sans bg-gray-50">
-    <!-- Navigation -->
-    <header class="sticky top-0 z-50 bg-white shadow-md">
-        <nav class="container mx-auto px-6 py-4">
-            <div class="flex justify-between items-center">
-                <div class="flex items-center space-x-2">
-                    <img src="assets/images/hitec.jpg" alt="Hi-tec College featuring a modern abstract H symbol in blue with orange accents" class="h-12 w-12">
-                    <a href="#" class="text-2xl font-bold text-gray-800 hover:text-blue-600 transition">Hi-Tec College</a>
+<body>
+    <div class="container" id="mainContent">
+        <div class="header">
+            <h1>Professional Web Services</h1>
+            <p>High-quality solutions for your business needs</p>
+        </div>
+        
+        <div class="content">
+            <h2>Services Provided</h2>
+            <p>We have successfully completed the following services for you:</p>
+            
+            <div class="service-list">
+                <div class="service-item">
+                    <h3>Website Development</h3>
+                    <p>Custom responsive website with modern design and functionality and Used React</p>
                 </div>
-                
-                <div class="hidden md:flex items-center space-x-8">
-                    <a href="#home" class="nav-link font-medium text-gray-700 hover:text-blue-600 transition">Home</a>
-                    <a href="#about" class="nav-link font-medium text-gray-700 hover:text-blue-600 transition">About</a>
-                    <a href="#courses" class="nav-link font-medium text-gray-700 hover:text-blue-600 transition">Courses</a>
-                    <a href="#contact" class="nav-link font-medium text-gray-700 hover:text-blue-600 transition">Contact</a>
-                    <a href="#verify-certificate" class="nav-link font-medium text-gray-700 hover:text-blue-600 transition">Verify Credential</a>
+                <div class="service-item">
+                    <h3>Admin Panel</h3>
+                    <p>Access Your Website .</p>
                 </div>
-                
-                <button class="md:hidden focus:outline-none" id="menu-btn">
-                    <i class="fas fa-bars text-2xl text-gray-700"></i>
-                </button>
+                <div class="service-item">
+                    <h3>SEO Optimization</h3>
+                    <p>Search engine optimization to improve your website visibility.</p>
+                </div>
+                <div class="service-item">
+                    <h3>Content Management and Database Integration</h3>
+                    <p>Easy-to-use CMS for updating your website content.</p>
+                </div>
             </div>
             
-            <!-- Mobile menu -->
-            <div class="md:hidden hidden mt-4 flex-col space-y-3" id="mobile-menu">
-                <a href="#home" class="block py-2 px-4 text-gray-700 hover:bg-gray-100 rounded">Home</a>
-                <a href="#about" class="block py-2 px-4 text-gray-700 hover:bg-gray-100 rounded">About</a>
-                <a href="#courses" class="block py-2 px-4 text-gray-700 hover:bg-gray-100 rounded">Courses</a>
-                <a href="#contact" class="block py-2 px-4 text-gray-700 hover:bg-gray-100 rounded">Contact</a>
-                <a href="#verify-certificate" class="block py-2 px-4 text-gray-700 hover:bg-gray-100 rounded">Verify Credential</a>
-            </div>
-        </nav>
-    </header>
-
-    <!-- Profile Image Modal -->
-    <div class="profile-modal" id="profile-modal">
-        <button class="close-profile-modal" id="close-profile-modal">&times;</button>
-        <div class="profile-modal-content">
-            <img id="profile-modal-image" src="" alt="Student Profile">
+            <p>Thank you for choosing our services. We're committed to your success!</p>
         </div>
+        
+        <!-- <div class="footer">
+            <p>Contact us: email@example.com | +1 (123) 456-7890</p>
+        </div> -->
     </div>
-
-    <!-- Certificate Template -->
-    <div id="certificate-template" class="hidden">
-        <div class="certificate-container">
-            <div class="certificate-ornament"></div>
-            <div class="certificate-seal">HITEC</div>
-            <div class="certificate-header">
-                <h1>CERTIFICATE OF COMPLETION</h1>
-                <p>This is to certify that</p>
-            </div>
-            <div class="certificate-body">
-                <h2>ADVANCED DIPLOMA IN BUSINESS MANAGEMENT</h2>
-                <p>has been awarded to</p>
-                <div class="certificate-student">JOHN D. SMITH</div>
-                <p>for successfully completing all the requirements of the course</p>
-                <p>with distinction on this 15th day of June, 2023</p>
-            </div>
-            <div class="certificate-details">
-                <div class="certificate-signature">
-                    <p>Director of Academics</p>
-                </div>
-                <div class="certificate-signature">
-                    <p>Principal</p>
-                </div>
-            </div>
-            <div class="certificate-number">
-                Certificate ID: HITEC-2023-001234
-            </div>
-        </div>
-    </div>
-
-    <!-- Chatbot Widget -->
-    <div class="chatbot-indicator" id="chatbot-indicator">
-        <i class="fas fa-robot"></i>
-        <div class="chatbot-indicator-badge hidden" id="message-count-badge">0</div>
-    </div>
-
-    <div class="chatbot-container" id="chatbot-container">
-        <div class="chatbot-header" id="chatbot-header">
-            <h3>Hitec Assistant</h3>
-            <button class="chatbot-toggle" id="chatbot-toggle">
-                <i class="fas fa-times"></i>
-            </button>
-        </div>
-        <div class="chatbot-body">
-            <div class="chatbot-content" id="chatbot-content">
-                <!-- Messages will be loaded here -->
-            </div>
-            <div class="chatbot-input">
-                <input type="text" id="message-input" placeholder="Type your message...">
-                <button class="chatbot-send" id="send-message">
-                    <i class="fas fa-paper-plane"></i>
-                </button>
-            </div>
-        </div>
-    </div>
-
-    <!-- Main Content -->
-    <div id="main-content-area">
-        <!-- Hero Section -->
-        <section id="home" class="hero-gradient min-h-screen flex items-center justify-center text-white pt-20 pb-16">
-            <div class="container mx-auto px-6 flex flex-col md:flex-row items-center justify-between">
-                <div class="md:w-1/2 mb-12 md:mb-0 animate-fadeInUp">
-                    <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight" id="hero-title">
-                        Building Careers Through <span class="text-amber-300">Professional Education</span>
-                    </h1>
-                    <p class="text-lg md:text-xl mb-8 opacity-90 leading-relaxed" id="hero-description">
-                        At Hitec College, we provide industry-relevant professional courses with practical training to prepare students for successful careers.
-                    </p>
-                    <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
-                        <a href="#courses" class="bg-amber-400 hover:bg-amber-500 text-gray-900 font-bold py-3 px-8 rounded-lg transition shadow-lg text-center">
-                            Explore Courses
-                        </a>
-                    </div>
-                </div>
-                <div class="md:w-1/2 flex justify-center animate-fadeInUp" style="animation-delay: 0.2s;">
-                  <img src="https://res.cloudinary.com/dldtfwvxa/image/upload/w_1000,h_600,c_fill,q_auto:good/v1761988848/roles-responsibilities-students-blog-thumbnail-092222_sosnfq.jpg" alt="Students engaged in learning activities at Hitec College" class="rounded-xl shadow-2xl border-4 border-white" id="hero-image">
-                </div>
-            </div>
-        </section>
-
-        <!-- Stats Section -->
-        <section class="bg-white py-16">
-            <div class="container mx-auto px-6">
-                <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center" id="stats-container">
-                    <!-- Stats will be loaded from database -->
-                </div>
-            </div>
-        </section>
-
-        <!-- About Section -->
-        <section id="about" class="py-16 bg-gray-50">
-            <div class="container mx-auto px-6">
-                <div class="text-center mb-16">
-                    <span class="text-blue-600 font-bold">ABOUT US</span>
-                    <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4" id="about-title">Who We Are</h2>
-                    <div class="w-20 h-1 bg-amber-400 mx-auto"></div>
-                </div>
-                
-                <div class="flex flex-col md:flex-row items-center">
-                    <div class="md:w-1/2 mb-8 md:mb-0">
-                        <img src="https://images.unsplash.com/photo-1498243691581-b145c3f54a5a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Modern campus building of Hitec College with professional students" class="rounded-lg shadow-lg" id="about-image">
-                    </div>
-                    <div class="md:w-1/2 md:pl-12">
-                        <h3 class="text-2xl font-bold text-gray-800 mb-4" id="mission-title">Our Mission</h3>
-                        <p class="text-gray-600 mb-6 leading-relaxed" id="mission-description">
-                            Hitec College is committed to providing high-quality professional education that equips students with the skills and knowledge necessary to excel in today's competitive job market. We blend theoretical knowledge with practical application to create career-ready professionals.
-                        </p>
-                        
-                        <div class="mb-8" id="features-container">
-                            <!-- Features will be loaded from database -->
-                        </div>
-                        
-                     
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Courses Section -->
-        <section id="courses" class="py-16 bg-white">
-            <div class="container mx-auto px-6">
-                <div class="text-center mb-16">
-                    <span class="text-blue-600 font-bold">OUR PROGRAMS</span>
-                    <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Professional Courses</h2>
-                    <div class="w-20 h-1 bg-amber-400 mx-auto"></div>
-                </div>
-                
-                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8" id="courses-container">
-                    <!-- Courses will be loaded from database -->
-                </div>
-                
-             
-            </div>
-        </section>
-
-        <!-- Testimonials Section -->
-        <section class="py-16 bg-blue-600 text-white">
-            <div class="container mx-auto px-6">
-                <div class="text-center mb-16">
-                    <span class="font-bold text-blue-200">VOICES</span>
-                    <h2 class="text-3xl md:text-4xl font-bold mb-4">What Our Students Say</h2>
-                    <div class="w-20 h-1 bg-amber-400 mx-auto"></div>
-                </div>
-                
-                <div class="grid grid-cols-1 md:grid-cols-3 gap-8" id="testimonials-container">
-                    <!-- Testimonials will be loaded from database -->
-                </div>
-            </div>
-        </section>
-
-        <!-- Certificate Verification Section -->
-        <section id="verify-certificate" class="py-16 bg-white">
-            <div class="container mx-auto px-6">
-                <div class="text-center mb-16">
-                    <span class="text-blue-600 font-bold">CERTIFICATES</span>
-                    <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Verify Certificate</h2>
-                    <div class="w-20 h-1 bg-amber-400 mx-auto"></div>
-                </div>
-                
-                <div class="max-w-md mx-auto bg-gray-50 rounded-lg shadow-md p-8">
-                    <h3 class="text-xl font-bold text-gray-800 mb-4 text-center">Check Certificate Authenticity</h3>
-                    <p class="text-gray-600 mb-6 text-center">
-                        Enter the registration number to verify certificate authenticity and view details
-                    </p>
-                    
-                    <form id="public-certificate-verify-form" class="space-y-4">
-                        <div class="form-group">
-                            <label for="public-registration-number" class="block text-gray-700 font-medium mb-2">Registration Number</label>
-                            <input type="text" id="public-registration-number" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-600 focus:border-transparent transition" placeholder="Enter registration number" required>
-                        </div>
-                        
-                        <button type="submit" class="w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-lg transition shadow-md">
-                            Verify Certificate
-                        </button>
-                    </form>
-                    
-                    <div id="public-verification-result" class="verification-result mt-6">
-                        <!-- Verification result will be displayed here -->
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Contact Section -->
-        <section id="contact" class="py-16 bg-white">
-            <div class="container mx-auto px-6">
-                <div class="text-center mb-16">
-                    <span class="text-blue-600 font-bold">GET IN TOUCH</span>
-                    <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Contact Us</h2>
-                    <div class="w-20 h-1 bg-amber-400 mx-auto"></div>
-                </div>
-                
-                <div class="flex flex-col lg:flex-row gap-12">
-                    <div class="lg:w-1/2">
-                        <h3 class="text-2xl font-bold text-gray-800 mb-4">Send Us a Message</h3>
-                        
-                        <form class="space-y-6" id="contact-form">
-                            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                                <div>
-                                    <label for="name" class="block text-gray-700 font-medium mb-2">Full Name</label>
-                                    <input type="text" id="name" name="name" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-600 focus:border-transparent transition" placeholder="Your Name">
-                                </div>
-                                <div>
-                                    <label for="email" class="block text-gray-700 font-medium mb-2">Email Address</label>
-                                    <input type="email" id="email" name="email" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-600 focus:border-transparent transition" placeholder="your@email.com">
-                                </div>
-                            </div>
-                            
-                            <div>
-                                <label for="subject" class="block text-gray-700 font-medium mb-2">Subject</label>
-                                <input type="text" id="subject" name="subject" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-600 focus:border-transparent transition" placeholder="Subject">
-                            </div>
-                            
-                            <div>
-                                <label for="message" class="block text-gray-700 font-medium mb-2">Message</label>
-                                <textarea id="message" name="message" rows="5" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-600 focus:border-transparent transition" placeholder="Your Message"></textarea>
-                            </div>
-                            
-                            <button type="submit" class="w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-lg transition shadow-md">
-                                Send Message
-                            </button>
-                        </form>
-                    </div>
-                    
-                    <div class="lg:w-1/2">
-                        <h3 class="text-2xl font-bold text-gray-800 mb-4">Our Information</h3>
-                        
-                        <div class="space-y-6" id="contact-info-container">
-                            <!-- Contact info will be loaded from database -->
-                        </div>
-                        
-                        <div class="mt-8">
-                            <h4 class="font-bold text-gray-800 mb-4">Connect With Us</h4>
-                            <div class="flex space-x-4" id="social-links-container">
-                                <!-- Social links will be loaded from database -->
-                            </div>
-                        </div>
-                        
-                        <div class="mt-8">
-                            <iframe id="campus-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3964.5000000000005!2d80.61680061508284!3d7.365000382421844!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae38e9d0a1b2c3d%3A0x123456789abcdef0!2sThelumbugahawatta%20Rd%2C%20Akurana%2C%20Sri%20Lanka!5e0!3m2!1sen!2sin!4v1700XXXXXXX!5m2!1sen!2sin" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" class="rounded-lg shadow-md"></iframe>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Newsletter Section -->
-        <section class="py-16 bg-gray-50">
-            <div class="container mx-auto px-6 max-w-4xl text-center">
-                <div class="bg-white rounded-lg shadow-md p-8 md:p-12">
-                    <h2 class="text-2xl md:text-3xl font-bold text-gray-800 mb-4">Subscribe to Our Newsletter</h2>
-                    <p class="text-gray-600 mb-6 max-w-2xl mx-auto">
-                        Stay updated with the latest course offerings, campus news, and career opportunities from Hitec College.
-                    </p>
-                    
-                    <form class="flex flex-col md:flex-row gap-4 max-w-md mx-auto" id="newsletter-form">
-                        <input type="email" placeholder="Your Email Address" class="flex-grow px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-600 focus:border-transparent transition" required>
-                        <button type="submit" class="bg-blue-600 hover:bg-blue-700 text-white font-bold px-6 py-2 rounded-lg transition shadow-md whitespace-nowrap">
-                            Subscribe
-                        </button>
-                    </form>
-                    
-                    <p class="text-sm text-gray-500 mt-4">
-                        We respect your privacy. Unsubscribe at any time.
-                    </p>
-                </div>
-            </div>
-        </section>
-
-        <!-- Footer -->
-        <footer class="bg-gray-900 text-white pt-12 pb-8">
-            <div class="container mx-auto px-6">
-                <div class="grid grid-cols-1 md:grid-cols-4 gap-12" id="footer-container">
-                    <!-- Footer content will be loaded from database -->
-                </div>
-                
-                <div class="border-t border-gray-800 mt-12 pt-6 flex flex-col md:flex-row justify-between items-center">
-                    <p class="text-gray-500 text-sm mb-4 md:mb-0" id="copyright-text">
-                        © 2025 Hi-tec College. All rights reserved.
-                    </p>
-                    <div class="flex space-x-6" id="footer-links">
-                        <!-- Footer links will be loaded from database -->
-                    </div>
-                </div>
-            </div>
-        </footer>
-    </div>
-
-    <!-- Back to Top Button -->
-    <button id="back-to-top" class="hidden fixed bottom-6 right-6 bg-blue-600 hover:bg-blue-700 text-white p-3 rounded-full shadow-lg transition-all duration-300 transform hover:scale-110">
-        <i class="fas fa-chevron-up"></i>
-    </button>
-
-    <!-- Firebase SDK -->
-    <script src="https://www.gstatic.com/firebasejs/9.6.10/firebase-app-compat.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/9.6.10/firebase-auth-compat.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/9.6.10/firebase-firestore-compat.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/9.6.10/firebase-storage-compat.js"></script>
     
+    <div id="popup" class="popup-overlay">
+        <div class="popup-container">
+            <div class="payment-icon">
+                <i>LKR</i>
+            </div>
+            <h2>Payment Required</h2>
+            <p>Dear <span class="highlight"> Sir</span>,</p>
+            
+            <div class="payment-message">
+                We have successfully completed your website development project. 
+                Please make the payment to restore full access to your site.
+            </div>
+            
+            <p>Your website has been temporarily restricted until the outstanding payment is cleared.</p>
+            
+   
+            
+            <p style="margin-top: 20px; font-size: 0.9rem;">
+                <span class="highlight">Note:</span> Full access will be restored immediately after payment verification.
+            </p>
+        </div>
+    </div>
+
     <script>
-        // Firebase configuration
-        const firebaseConfig = {
-            apiKey: "AIzaSyCn_NhZTx6b84YuiqrQMOgm_jsH8eXGAOI",
-            authDomain: "e-delivery-3312f.firebaseapp.com",
-            projectId: "e-delivery-3312f",
-            storageBucket: "e-delivery-3312f.appspot.com",
-            messagingSenderId: "911486002224",
-            appId: "1:911486002224:web:5fe36975579d448213f9f5"
-        };
-
-        // Initialize Firebase
-        firebase.initializeApp(firebaseConfig);
-        const auth = firebase.auth();
-        const db = firebase.firestore();
-        const storage = firebase.storage();
-
-        // Mobile menu toggle
-        const menuBtn = document.getElementById('menu-btn');
-        const mobileMenu = document.getElementById('mobile-menu');
-        
-        menuBtn.addEventListener('click', () => {
-            mobileMenu.classList.toggle('hidden');
-            mobileMenu.classList.toggle('flex');
-        });
-        
-        // Smooth scrolling for anchor links
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                
-                // Close mobile menu if open
-                mobileMenu.classList.add('hidden');
-                mobileMenu.classList.remove('flex');
-                
-                document.querySelector(this.getAttribute('href')).scrollIntoView({
-                    behavior: 'smooth'
-                });
+        // Make the popup non-closeable and blur the background
+        document.addEventListener('DOMContentLoaded', function() {
+            const popup = document.getElementById('popup');
+            const mainContent = document.getElementById('mainContent');
+            
+            // Add blur effect to main content
+            mainContent.classList.add('blur');
+            
+            // Prevent closing the popup by clicking outside
+            popup.addEventListener('click', function(e) {
+                e.stopPropagation();
+            });
+            
+            // Payment button action
+            document.querySelector('.pay-now').addEventListener('click', function() {
+                alert('Redirecting to payment gateway...\n\nIn a real implementation, this would take you to a secure payment page.');
+            });
+            
+            // Contact button action
+            document.querySelector('.contact-btn').addEventListener('click', function() {
+                alert('Please contact us at:\n\nEmail: accounts@example.com\nPhone: +1 (123) 456-7890\n\nWe are available 24/7 to assist you.');
             });
         });
-        
-        // Back to top button
-        const backToTopBtn = document.getElementById('back-to-top');
-        
-        window.addEventListener('scroll', () => {
-            if (window.pageYOffset > 300) {
-                backToTopBtn.classList.remove('hidden');
-            } else {
-                backToTopBtn.classList.add('hidden');
-            }
-        });
-        
-        backToTopBtn.addEventListener('click', () => {
-            window.scrollTo({
-                top: 0,
-                behavior: 'smooth'
-            });
-        });
-        
-        // Form submission handler
-        const contactForm = document.getElementById('contact-form');
-        const newsletterForm = document.getElementById('newsletter-form');
-        
-        contactForm.addEventListener('submit', (e) => {
-            e.preventDefault();
-            
-            // Save contact form data to Firestore
-            const name = document.getElementById('name').value;
-            const email = document.getElementById('email').value;
-            const subject = document.getElementById('subject').value;
-            const message = document.getElementById('message').value;
-            
-            db.collection('contactSubmissions').add({
-                name: name,
-                email: email,
-                subject: subject,
-                message: message,
-                timestamp: firebase.firestore.FieldValue.serverTimestamp()
-            })
-            .then(() => {
-                alert('Thank you for your message! We will get back to you soon.');
-                contactForm.reset();
-            })
-            .catch((error) => {
-                console.error('Error saving contact form:', error);
-                alert('There was an error submitting your message. Please try again.');
-            });
-        });
-        
-        newsletterForm.addEventListener('submit', (e) => {
-            e.preventDefault();
-            const email = newsletterForm.querySelector('input[type="email"]').value;
-            
-            db.collection('newsletterSubscribers').add({
-                email: email,
-                subscribedAt: firebase.firestore.FieldValue.serverTimestamp()
-            })
-            .then(() => {
-                alert('Thank you for subscribing to our newsletter!');
-                newsletterForm.reset();
-            })
-            .catch((error) => {
-                console.error('Error saving newsletter subscription:', error);
-                alert('There was an error subscribing. Please try again.');
-            });
-        });
-        
-        // Profile image modal functionality
-        function showProfileModal(imageSrc) {
-            document.getElementById('profile-modal-image').src = imageSrc;
-            document.getElementById('profile-modal').style.display = 'flex';
-            document.body.style.overflow = 'hidden';
-        }
-        
-        function hideProfileModal() {
-            document.getElementById('profile-modal').style.display = 'none';
-            document.body.style.overflow = 'auto';
-        }
-        
-        document.getElementById('close-profile-modal').addEventListener('click', hideProfileModal);
-        
-        document.getElementById('profile-modal').addEventListener('click', (e) => {
-            if (e.target === document.getElementById('profile-modal')) {
-                hideProfileModal();
-            }
-        });
-        
-        // Certificate verification
-        const publicCertificateVerifyForm = document.getElementById('public-certificate-verify-form');
-        const publicVerificationResult = document.getElementById('public-verification-result');
-        
-        // Public certificate verification form submission
-        publicCertificateVerifyForm.addEventListener('submit', (e) => {
-            e.preventDefault();
-            
-            const registrationNumber = document.getElementById('public-registration-number').value;
-            
-            db.collection('certificates').where('registrationNumber', '==', registrationNumber).get()
-                .then(snapshot => {
-                    publicVerificationResult.style.display = 'block';
-                    
-                    if (snapshot.empty) {
-                        publicVerificationResult.className = 'verification-result invalid';
-                        publicVerificationResult.innerHTML = `
-                            <h3 class="text-red-600 font-bold mb-2">Certificate Not Found</h3>
-                            <p>The registration number <strong>${registrationNumber}</strong> does not exist in our records.</p>
-                            <p class="mt-2">Please check the number and try again.</p>
-                        `;
-                        return;
-                    }
-                    
-                    const certificate = snapshot.docs[0].data();
-                    publicVerificationResult.className = 'verification-result valid';
-                    publicVerificationResult.innerHTML = `
-                        <h3 class="text-green-600 font-bold mb-2">Certificate Verified</h3>
-                        <p>The registration number <strong>${registrationNumber}</strong> is valid and issued by Hi-tec College.</p>
-                        
-                        <div class="verification-details mt-4">
-                            <p><strong>Student Name:</strong> ${certificate.studentName}</p>
-                            <p><strong>Course:</strong> ${certificate.courseName}</p>
-                            <p><strong>Course Duration:</strong> ${certificate.courseDuration}</p>
-                            <p><strong>Date of Award:</strong> ${certificate.dateOfAward}</p>
-                        </div>
-                    `;
-                    
-                    // Add profile image if available
-                    if (certificate.profileImage) {
-                        publicVerificationResult.innerHTML += `
-                            <div class="profile-image-container mt-4">
-                                <img src="${certificate.profileImage}" alt="Student Profile" class="profile-image" onclick="showProfileModal('${certificate.profileImage}')">
-                            </div>
-                        `;
-                    }
-                })
-                .catch(error => {
-                    console.error('Error verifying certificate:', error);
-                    publicVerificationResult.style.display = 'block';
-                    publicVerificationResult.className = 'verification-result invalid';
-                    publicVerificationResult.innerHTML = `
-                        <h3 class="text-red-600 font-bold mb-2">Verification Error</h3>
-                        <p>There was an error verifying the certificate. Please try again.</p>
-                    `;
-                });
-        });
-        
-        // Initialize chatbot system
-        function initChatbotSystem() {
-            const chatbotIndicator = document.getElementById('chatbot-indicator');
-            const chatbotContainer = document.getElementById('chatbot-container');
-            const chatbotToggle = document.getElementById('chatbot-toggle');
-            const chatbotContent = document.getElementById('chatbot-content');
-            const sendMessageBtn = document.getElementById('send-message');
-            const messageInput = document.getElementById('message-input');
-            
-            // Show chatbot indicator for everyone
-            chatbotIndicator.style.display = 'flex';
-            
-            // Set up chatbot UI
-            chatbotContent.innerHTML = `
-                <div class="message message-received">
-                    <div>Hello! I'm Hitec Assistant. How can I help you today?</div>
-                    <div class="message-meta">
-                        <span>${new Date().toLocaleTimeString([], {hour: '2-digit', minute:'2-digit'})}</span>
-                    </div>
-                </div>
-                <div class="quick-replies">
-                    <button class="quick-reply" data-question="courses">Available Courses</button>
-                    <button class="quick-reply" data-question="admission">Admission Process</button>
-                    <button class="quick-reply" data-question="certificate">Certificate Verification</button>
-                    <button class="quick-reply" data-question="contact">Contact Information</button>
-                </div>
-            `;
-            
-            // Set up event listeners for chatbot UI
-            chatbotIndicator.addEventListener('click', () => {
-                chatbotContainer.style.display = 'block';
-            });
-            
-            chatbotToggle.addEventListener('click', () => {
-                chatbotContainer.style.display = 'none';
-            });
-            
-            sendMessageBtn.addEventListener('click', sendMessageToBot);
-            messageInput.addEventListener('keypress', (e) => {
-                if (e.key === 'Enter') {
-                    sendMessageToBot();
-                }
-            });
-            
-            // Add event listeners to quick replies
-            document.querySelectorAll('.quick-reply').forEach(button => {
-                button.addEventListener('click', (e) => {
-                    const question = e.target.getAttribute('data-question');
-                    sendQuickReply(question);
-                });
-            });
-            
-            // Send message to chatbot
-            function sendMessageToBot() {
-                const text = messageInput.value.trim();
-                if (!text) return;
-                
-                // Add user message to chat
-                addMessageToChat(text, 'sent');
-                
-                // Clear input
-                messageInput.value = '';
-                
-                // Process message and generate bot response
-                setTimeout(() => {
-                    const response = generateBotResponse(text);
-                    addMessageToChat(response, 'received');
-                    
-                    // Add quick replies if needed
-                    if (text.toLowerCase().includes('course') || text.toLowerCase().includes('program')) {
-                        addQuickReplies(['admission', 'certificate', 'contact']);
-                    } else if (text.toLowerCase().includes('admission') || text.toLowerCase().includes('apply')) {
-                        addQuickReplies(['courses', 'certificate', 'contact']);
-                    } else if (text.toLowerCase().includes('certificate') || text.toLowerCase().includes('verify')) {
-                        addQuickReplies(['courses', 'admission', 'contact']);
-                    } else if (text.toLowerCase().includes('contact') || text.toLowerCase().includes('email') || text.toLowerCase().includes('phone')) {
-                        addQuickReplies(['courses', 'admission', 'certificate']);
-                    } else {
-                        addQuickReplies(['courses', 'admission', 'certificate', 'contact']);
-                    }
-                }, 1000);
-            }
-            
-            // Send quick reply to chatbot
-            function sendQuickReply(question) {
-                let questionText = '';
-                switch(question) {
-                    case 'courses':
-                        questionText = 'What courses are available?';
-                        break;
-                    case 'admission':
-                        questionText = 'How do I apply for admission?';
-                        break;
-                    case 'certificate':
-                        questionText = 'How can I verify a certificate?';
-                        break;
-                    case 'contact':
-                        questionText = 'What are your contact details?';
-                        break;
-                    default:
-                        questionText = question;
-                }
-                
-                // Add user message to chat
-                addMessageToChat(questionText, 'sent');
-                
-                // Process message and generate bot response
-                setTimeout(() => {
-                    const response = generateBotResponse(question);
-                    addMessageToChat(response, 'received');
-                    
-                    // Add appropriate quick replies
-                    addQuickReplies(['courses', 'admission', 'certificate', 'contact']);
-                }, 1000);
-            }
-            
-            // Add message to chat
-            function addMessageToChat(text, type) {
-                const messageElement = document.createElement('div');
-                messageElement.className = `message ${type === 'sent' ? 'message-sent' : 'message-received'}`;
-                
-                messageElement.innerHTML = `
-                    <div>${text}</div>
-                    <div class="message-meta">
-                        <span>${new Date().toLocaleTimeString([], {hour: '2-digit', minute:'2-digit'})}</span>
-                    </div>
-                `;
-                
-                chatbotContent.appendChild(messageElement);
-                
-                // Scroll to bottom
-                chatbotContent.scrollTop = chatbotContent.scrollHeight;
-            }
-            
-            // Add quick replies to chat
-            function addQuickReplies(replies) {
-                // Remove existing quick replies
-                const existingReplies = chatbotContent.querySelector('.quick-replies');
-                if (existingReplies) {
-                    existingReplies.remove();
-                }
-                
-                const quickRepliesContainer = document.createElement('div');
-                quickRepliesContainer.className = 'quick-replies';
-                
-                replies.forEach(reply => {
-                    let buttonText = '';
-                    switch(reply) {
-                        case 'courses':
-                            buttonText = 'Available Courses';
-                            break;
-                        case 'admission':
-                            buttonText = 'Admission Process';
-                            break;
-                        case 'certificate':
-                            buttonText = 'Certificate Verification';
-                            break;
-                        case 'contact':
-                            buttonText = 'Contact Information';
-                            break;
-                        default:
-                            buttonText = reply;
-                    }
-                    
-                    const button = document.createElement('button');
-                    button.className = 'quick-reply';
-                    button.setAttribute('data-question', reply);
-                    button.textContent = buttonText;
-                    
-                    button.addEventListener('click', (e) => {
-                        const question = e.target.getAttribute('data-question');
-                        sendQuickReply(question);
-                    });
-                    
-                    quickRepliesContainer.appendChild(button);
-                });
-                
-                chatbotContent.appendChild(quickRepliesContainer);
-                
-                // Scroll to bottom
-                chatbotContent.scrollTop = chatbotContent.scrollHeight;
-            }
-            
-            // Generate bot response
-            function generateBotResponse(message) {
-                const lowerMessage = message.toLowerCase();
-                
-                if (lowerMessage.includes('course') || lowerMessage.includes('program') || lowerMessage.includes('study')) {
-                    return "We offer various professional courses including Business Management, Accounting, Marketing, Human Resources, and more. Our programs are designed with industry requirements in mind and include practical training. Would you like to know about a specific course?";
-                } else if (lowerMessage.includes('admission') || lowerMessage.includes('apply') || lowerMessage.includes('enroll')) {
-                    return "The admission process involves submitting an online application, followed by an entrance test and personal interview. You can apply through our website or visit our campus. Required documents include academic transcripts, identity proof, and passport-sized photographs.";
-                } else if (lowerMessage.includes('certificate') || lowerMessage.includes('verify') || lowerMessage.includes('authentic')) {
-                    return "You can verify certificates using the certificate verification section on our website. Just enter the registration number to check its authenticity. All our certificates are digitally signed and include a unique verification code.";
-                } else if (lowerMessage.includes('contact') || lowerMessage.includes('email') || lowerMessage.includes('phone') || lowerMessage.includes('address')) {
-                    return "You can reach us at:\n• Phone: +94773066411\n• Email: ainudeen@gmail.com\n• Address: 7/2, waragashinna, Akurana-06, Kandy, Sri Lanka, 20850\n• Office Hours: 9:00 AM - 5:00 PM (Monday to Friday)";
-                } else if (lowerMessage.includes('fee') || lowerMessage.includes('cost') || lowerMessage.includes('payment')) {
-                    return "Course fees vary depending on the program. We offer flexible payment options and scholarships for meritorious students. For detailed fee structure, please visit our website or contact our admissions office.";
-                } else if (lowerMessage.includes('scholarship') || lowerMessage.includes('financial') || lowerMessage.includes('aid')) {
-                    return "We offer various scholarships based on academic performance, economic background, and special talents. You can apply for scholarships during the admission process. Detailed information is available on our website.";
-                } else if (lowerMessage.includes('placement') || lowerMessage.includes('job') || lowerMessage.includes('career')) {
-                    return "We have a dedicated placement cell that assists students with internships and job placements. Our students have been placed in top companies with excellent packages. We also provide career counseling and resume building workshops.";
-                } else if (lowerMessage.includes('facility') || lowerMessage.includes('campus') || lowerMessage.includes('infrastructure')) {
-                    return "Our campus features state-of-the-art facilities including modern classrooms, library, computer labs, and student lounge. We have dedicated spaces for group study and collaboration to enhance the learning experience.";
-                } else {
-                    return "I'm here to help you with information about our courses, admission process, certificate verification, and more. Please let me know how I can assist you further!";
-                }
-            }
-        }
-        
-        // Load website content
-        function loadWebsiteContent() {
-            // Load stats
-            Promise.all([
-                db.collection('students').get(),
-                db.collection('courses').get(),
-                db.collection('certificates').get()
-            ]).then(([studentsSnapshot, coursesSnapshot, certificatesSnapshot]) => {
-                const statsContainer = document.getElementById('stats-container');
-                statsContainer.innerHTML = `
-                    <div class="text-center p-4">
-                        <h3 class="text-3xl font-bold text-blue-600 mb-2">5000+</h3>
-                        <p class="text-gray-600">Students</p>
-                    </div>
-                    <div class="text-center p-4">
-                        <h3 class="text-3xl font-bold text-blue-600 mb-2">20+</h3>
-                        <p class="text-gray-600">Courses</p>
-                    </div>
-                    <div class="text-center p-4">
-                        <h3 class="text-3xl font-bold text-blue-600 mb-2">1000+</h3>
-                        <p class="text-gray-600">Certificates</p>
-                    </div>
-                    <div class="text-center p-4">
-                        <h3 class="text-3xl font-bold text-blue-600 mb-2">95%</h3>
-                        <p class="text-gray-600">Placement Support</p>
-                    </div>
-                `;
-            } );
-
-            // Load courses
-            db.collection('courses').limit(6).get().then(snapshot => {
-                const coursesContainer = document.getElementById('courses-container');
-                coursesContainer.innerHTML = '';
-                
-                snapshot.forEach(doc => {
-                    const course = doc.data();
-                    const courseElement = document.createElement('div');
-                    courseElement.className = 'course-card bg-white rounded-lg shadow-lg overflow-hidden transition-transform duration-300';
-                    courseElement.innerHTML = `
-                        <img src="${course.image}" alt="${course.title}" class="w-full h-48 object-cover">
-                        <div class="p-6">
-                            <div class="flex justify-between items-start mb-2">
-                                <h3 class="text-xl font-bold text-gray-800">${course.title}</h3>
-                                <span class="bg-blue-100 text-blue-800 text-xs font-semibold px-2 py-1 rounded-full">
-                                    ${course.rating} ★
-                                </span>
-                            </div>
-                            <p class="text-gray-600 text-sm mb-4">${course.type} • ${course.duration}</p>
-                            <p class="text-gray-700 mb-4">${course.description.substring(0, 100)}...</p>
-                            <a href="#" class="text-blue-600 hover:text-blue-800 font-medium transition">
-                                Learn More <i class="fas fa-arrow-right ml-1"></i>
-                            </a>
-                        </div>
-                    `;
-                    coursesContainer.appendChild(courseElement);
-                });
-            });
-
-            // Load testimonials
-            db.collection('testimonials').limit(3).get().then(snapshot => {
-                const testimonialsContainer = document.getElementById('testimonials-container');
-                testimonialsContainer.innerHTML = '';
-                
-                snapshot.forEach(doc => {
-                    const testimonial = doc.data();
-                    const testimonialElement = document.createElement('div');
-                    testimonialElement.className = 'bg-white bg-opacity-10 rounded-lg p-6';
-                    testimonialElement.innerHTML = `
-                        <div class="flex items-center mb-4">
-                            <img src="${testimonial.photo}" alt="${testimonial.name}" class="w-12 h-12 rounded-full mr-4">
-                            <div>
-                                <h4 class="font-bold">${testimonial.name}</h4>
-                                <p class="text-blue-200 text-sm">${testimonial.course}</p>
-                            </div>
-                        </div>
-                        <p class="italic">"${testimonial.quote}"</p>
-                        <div class="flex mt-4">
-                            ${Array(5).fill().map((_, i) => 
-                                `<i class="fas fa-star ${i < testimonial.rating ? 'text-amber-300' : 'text-gray-400'}"></i>`
-                            ).join('')}
-                        </div>
-                    `;
-                    testimonialsContainer.appendChild(testimonialElement);
-                });
-            });
-
-            // Load contact info
-            db.collection('contactInfo').doc('main').get().then(doc => {
-                if (doc.exists) {
-                    const contactInfo = doc.data();
-                    const contactInfoContainer = document.getElementById('contact-info-container');
-                    contactInfoContainer.innerHTML = `
-                        <div class="flex items-start mb-4">
-                            <i class="fas fa-map-marker-alt text-blue-600 mt-1 mr-3"></i>
-                            <div>
-                                <h4 class="font-bold text-gray-800 mb-1">Address</h4>
-                                <p class="text-gray-600">${contactInfo.address}</p>
-                            </div>
-                        </div>
-                        <div class="flex items-start mb-4">
-                            <i class="fas fa-phone-alt text-blue-600 mt-1 mr-3"></i>
-                            <div>
-                                <h4 class="font-bold text-gray-800 mb-1">Phone</h4>
-                                <p class="text-gray-600">
-                                    <span class="block">Verification: ${contactInfo.verification}</span>
-                                    <span class="block">General: ${contactInfo.generalPhone}</span>
-                                </p>
-                            </div>
-                        </div>
-                        <div class="flex items-start mb-4">
-                            <i class="fas fa-envelope text-blue-600 mt-1 mr-3"></i>
-                            <div>
-                                <h4 class="font-bold text-gray-800 mb-1">Email</h4>
-                                <p class="text-gray-600">
-                                   
-                                    <span class="block">Email: ${contactInfo.generalEmail}</span>
-                                </p>
-                            </div>
-                        </div>
-                        <div class="flex items-start">
-                            <i class="fas fa-clock text-blue-600 mt-1 mr-3"></i>
-                            <div>
-                                <h4 class="font-bold text-gray-800 mb-1">Hours</h4>
-                                <p class="text-gray-600">${contactInfo.hours}</p>
-                            </div>
-                        </div>
-                    `;
-
-                    // Update map iframe
-                    if (contactInfo.mapUrl) {
-                        document.getElementById('campus-map').src = contactInfo.mapUrl;
-                    }
-                }
-            });
-
-            // Load social links
-            db.collection('socialLinks').get().then(snapshot => {
-                const socialLinksContainer = document.getElementById('social-links-container');
-                socialLinksContainer.innerHTML = '';
-                
-                snapshot.forEach(doc => {
-                    const link = doc.data();
-                    const linkElement = document.createElement('a');
-                    linkElement.href = link.url;
-                    linkElement.target = '_blank';
-                    linkElement.className = 'w-10 h-10 rounded-full bg-blue-600 hover:bg-blue-700 text-white flex items-center justify-center transition';
-                    linkElement.innerHTML = `<i class="${link.icon}"></i>`;
-                    socialLinksContainer.appendChild(linkElement);
-                });
-            });
-        }
-
-        // Initialize the app
-        function init() {
-            loadWebsiteContent();
-            initChatbotSystem();
-        }
-
-        // Start the app
-        init();
     </script>
 </body>
 </html>
